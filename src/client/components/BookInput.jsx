@@ -10,8 +10,8 @@ const mapDispatchToProps = dispatch => {
     }
   }
 }
-
 const BookInput = (props) => {
+  //Debounce method to make sure we don't fetch until user stops typing
   const debounceGetUserInput = AwesomeDebouncePromise(props.getUserInput, 600);
   return (
     <div style={{marginBottom: '20px'}}>
