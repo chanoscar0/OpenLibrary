@@ -24,7 +24,7 @@ const SearchResults = (props) => {
       if(book.title && book.author_name && book.first_publish_year) return book;
   });
 }
-//Method needed with List to actually render the contents of a specific row
+//Method needed with <List/> to actually render the contents of a specific row
   const renderRow = ({index, parent, key, style}) => {
       return (
         <div key={key} style={style}>
