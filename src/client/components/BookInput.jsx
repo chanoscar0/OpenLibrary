@@ -15,7 +15,7 @@ const BookInput = (props) => {
   const debounceGetUserInput = AwesomeDebouncePromise(props.getUserInput, 600);
   return (
     <div style={{marginBottom: '20px'}}>
-      <label style={{fontSize: '2em'}}>Name of Book: </label><input style={{fontSize: '2em'}}onKeyUp={(e) => debounceGetUserInput(e.target.value)} placeholder="Search for a book"/>
+      <label style={{fontSize: '1em'}}>Name of Book: </label><input style={{fontSize: '1em'}}onKeyUp={(e) => debounceGetUserInput(e.target.value)} placeholder="Search for a book"/>
     </div>
   )
 }

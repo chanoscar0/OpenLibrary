@@ -13,7 +13,7 @@ const App = () => {
   return (
     <WindowDimensionsProvider>
       <div style={divStyle}>
-        <h1 style={{fontSize: '3em'}}>Book Lookup</h1>
+        <h1 style={{fontSize: '2em'}}>Book Lookup</h1>
         <BookInput />
         <SearchResults />
       </div>
