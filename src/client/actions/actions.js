@@ -2,6 +2,7 @@ import * as types from '../constants/actionTypes';
 
 export const getBooks = (title) => {
   return (dispatch) => {
+    if(!title) dispatch(getBooksSuccess({docs: []}));
     // joining in book title with +s to create query string (I.E. Lord Of the Rings === Lord+Of+the+Rings)
     const queryString = title.split(' ').join('+');
     // Request to the API for the books

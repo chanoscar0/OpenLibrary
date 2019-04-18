@@ -1,7 +1,7 @@
 import React from 'react';
 import BookInput from './client/components/BookInput';
 import SearchResults from './client/components/SearchResults';
-import 'react-virtualized/styles.css';
+import { WindowDimensionsProvider } from './client/components/WindowDimensionProvider';
 
 const App = () => {
   const divStyle = {
@@ -11,11 +11,13 @@ const App = () => {
     alignItems: 'center'
   }
   return (
-    <div style={divStyle}>
-      <h1>Book Lookup</h1>
-      <BookInput />
-      <SearchResults />
-    </div>
+    <WindowDimensionsProvider>
+      <div style={divStyle}>
+        <h1 style={{fontSize: '3em'}}>Book Lookup</h1>
+        <BookInput />
+        <SearchResults />
+      </div>
+    </WindowDimensionsProvider>
   )
 }
 

@@ -2,7 +2,7 @@ import * as types from '../constants/actionTypes';
 
 const initialState = {
   bookList: [],
-  userBook: ''
+  userBook: '',
 }
 
 export default (previousState = initialState, action) => {
